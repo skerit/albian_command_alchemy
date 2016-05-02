@@ -1,0 +1,13 @@
+<% expands('layouts/body'); %>
+<% set_title('Albian Command - Creatures') %>
+
+<% start('main') %>
+<div class="creatures">
+	<% for (i = 0; i < creatures.length; i++) { %>
+		<% creature = creatures[i] %>
+		<div class="creature">
+			<%= creature.name %>
+		</div>
+	<% } %>
+</div>
+<% end('main') %>

@@ -1,0 +1,51 @@
+@import "topsoil/less/topsoil";
+
+body {
+	min-height: 100vh;
+	background: #262932;
+	color: #ffffff;
+}
+
+x-hawkejs[data-name="body"] {
+	.flexParent();
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.sidebar {
+	.flexChild(0 0 12rem);
+
+	> x-hawkejs {
+		.flexParent(column);
+
+		min-height: 100vh;
+		background: #3c414f;
+
+		> * {
+			.flexChild(0 0 auto);
+			padding: 1rem;
+
+			font-size: 1.5rem;
+		}
+
+		.world-name {
+			text-align: center;
+			margin: 0.5rem;
+			border-bottom: 1px solid #262932;
+			font-size: 2rem;
+		}
+
+		a {
+			background-color: #262932;
+			min-width: 92%;
+		}
+	}
+}
+
+.cage {
+	.flexChild(1 0 auto);
+	.flexParent();
+}

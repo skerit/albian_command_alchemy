@@ -1,0 +1,13 @@
+{
+	"name": "albian-command",
+	"description": "Get complete control over your norns",
+	"version": "0.1.0",
+	"bg-script": "nwjs_bg.js",
+	"node-main": "nwjs_node.js",
+	"main": "index.html",
+	"license": "GPLv3",
+	"dependencies": {
+		"alchemymvc": "~1.0.0",
+		"albian-creatures": "~0.1.0"
+	}
+}

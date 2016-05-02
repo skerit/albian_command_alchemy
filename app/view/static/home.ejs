@@ -1,0 +1,14 @@
+<% expands('layouts/body'); %>
+<% set_title('Albian Command') %>
+
+<% start('sidebar') %>
+	<div class="world-name">
+		<%= world_name %>
+	</div>
+
+	<% Router.printRoute('Creatures#index', null, {title: 'Creatures'}) %>
+<% end('sidebar') %>
+
+<% start('main') %>
+
+<% end('main') %>
